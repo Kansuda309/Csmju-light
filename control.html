@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ควบคุมการเปิด-ปิดไฟ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: skyblue;
+            padding: 1em;
+            color: white;
+        }
+        main {
+            padding: 2em;
+        }
+        .light-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .light {
+            margin: 1em;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px 50px 10px 10px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 2px solid #333;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.03s ease;
+        }
+        .light.on {
+            background-color: green;
+        }
+        .light-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ควบคุมการเปิด-ปิดไฟห้องพักอาจารย์</h1>
+        <nav>
+            <a href="home.html" style="color: black; text-decoration: none;">กลับไปหน้าหลัก</a>
+        </nav>
+    </header>
+    <main>
+        <div class="light-container" id="page1">
+            <div class="light-group">
+                <div class="light" id="light1"></div>
+                <button onclick="toggleLight(1)">Light 1</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light2"></div>
+                <button onclick="toggleLight(2)">Light 2</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light3"></div>
+                <button onclick="toggleLight(3)">Light 3</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light4"></div>
+                <button onclick="toggleLight(4)">Light 4</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light5"></div>
+                <button onclick="toggleLight(5)">Light 5</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light6"></div>
+                <button onclick="toggleLight(6)">Light 6</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light7"></div>
+                <button onclick="toggleLight(7)">Light 7</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light8"></div>
+                <button onclick="toggleLight(8)">Light 8</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light9"></div>
+                <button onclick="toggleLight(9)">Light 9</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light10"></div>
+                <button onclick="toggleLight(10)">Light 10</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light11"></div>
+                <button onclick="toggleLight(11)">Light 11</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light12"></div>
+                <button onclick="toggleLight(12)">Light 12</button>
+            </div>
+            <div class="light-group">
+                <div class="light" id="light13"></div>
+                <button onclick="toggleLight(13)">Light 13</button>
+            </div>
+    </main>
+    <script>
+        function toggleLight(lightNumber) {
+            const light = document.getElementById(`light${lightNumber}`);
+            light.classList.toggle('on');
+        }
+    </script>
+</body>
+</html>

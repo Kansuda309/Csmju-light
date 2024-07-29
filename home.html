@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเปิด-ปิดไฟ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('comsci.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        header {
+            padding: 1em;
+            color: black;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        main {
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+    </header>
+    <main>
+        <h2>หน้าหลัก</h2>
+        <p>เลือกเพื่อเข้าไปยังแต่ละ:</p>
+        <p>
+        <a href="light.html">ไฟทางเดินฝั่งห้องพักอาจารย์</a>
+        </p>
+        <p>
+        <a href="light2.html">ไฟทางเดินฝั่งห้องชมรม</a>
+        </p>
+        <a href="control.html">ไฟห้องพักอาจารย์</a>
+    </main>
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
